@@ -11,7 +11,7 @@ public class SpringDemo {
     public static void main(String[] args) {
 //        Resource rs = new FileSystemResource("spring-config.xml");
 //        BeanFactory factory = new XmlBeanFactory(rs);
-        ApplicationContext context = new FileSystemXmlApplicationContext("src/main/java/spring-config.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("src/main/resources/spring-config.xml");
 
         HelloBean hellobean = (HelloBean) context.getBean("helloBean");
         System.out.println(hellobean.getHelloWorld());
